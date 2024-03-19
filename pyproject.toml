@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^5.0.3"
+pillow = "^10.2.0"
+psycopg2-binary = "^2.9.9"
 
 
 [tool.poetry.group.lint.dependencies]
@@ -20,6 +22,10 @@ flake8 = "^7.0.0"
 [tool.poetry.group.tests.dependencies]
 pytest = "^8.1.1"
 pytest-cov = "^4.1.0"
+
+
+[tool.poetry.group.develop.dependencies]
+ipython = "^8.22.2"
 
 [build-system]
 requires = ["poetry-core"]
