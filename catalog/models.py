@@ -5,7 +5,7 @@ from django.db import models
 NULLABLE = {"null": True, "blank": True}
 
 
-class Category:
+class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name="Наименование")
     description = models.TextField(**NULLABLE, verbose_name="Описание")
 
@@ -17,7 +17,7 @@ class Category:
         verbose_name_plural = "Категории"
 
 
-class Product:
+class Product(models.Model):
     name = models.CharField(max_length=250, verbose_name="Наименование")
     description = models.TextField(**NULLABLE, verbose_name="Описание")
     image = models.ImageField(upload_to="catalog/", **NULLABLE, verbose_name="Превью")
