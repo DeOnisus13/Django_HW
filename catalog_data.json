@@ -1,0 +1,52 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Ноутбуки",
+      "description": "переносной ПК"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Флешки",
+      "description": "устройство хранения данных"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Клавиатуры",
+      "description": "Печатное устройство ввода данных"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Lenovo ThinkPad 58",
+      "description": "Ноутбук Lenovo ThinkPad 58. 8 ядер, 16 потоков, 16Gb оперативной памяти",
+      "image": "",
+      "category": 1,
+      "price": 50000,
+      "created_at": null,
+      "updated_at": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Transcend 700 8Gb",
+      "description": "Флешка Transcend 700 на 8Gb",
+      "image": "",
+      "category": 2,
+      "price": 500,
+      "created_at": null,
+      "updated_at": null
+    }
+  }
+]
