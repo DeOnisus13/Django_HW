@@ -12,7 +12,6 @@
         <div class="card-body">
             <img class="card-img-top" src="{{ object.image|mymedia }}" alt="Item image">
             <h1 class="card-title pricing-card-title">{{ object.price }} руб.</h1>
-            <h1 class="card-title pricing-card-title">PK = {{ object.pk }}</h1>
             <ul class="list-unstyled mt-3 mb-4 text-start m-3">
                 <li>{{ object.description|slice:":100" }}</li>
             </ul>
