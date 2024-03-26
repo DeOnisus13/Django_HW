@@ -8,5 +8,5 @@ app_name = CatalogConfig.name
 urlpatterns = [
     path("", home, name="home"),
     path("contacts/", contacts, name="contacts"),
-    path("<int:pk>/item/", item, name="item")
+    path("item/<int:pk>", item, name="item")
 ]
